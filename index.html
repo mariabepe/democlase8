@@ -1,113 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="./css/estilos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dulce Cuna - Tienda de Ropa para Bebés</title>
+  <link rel="stylesheet" href="./css/estilos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Poppins:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <img src="./img/logo.jpg" alt="logo">
-        <form action="./serch-results.html" method="GET" 
-        class="buscador">
-        <input type="text" placeholder="Buscar el producto deseado...." 
-        name = "Buscar"  value="">
-        <Button type="Buscar">Buscar</Button>
-        </form>
-        <nav>
-            <ul class="user-nav">
-                <li> <a href="#">Home</a></li>
-                <li> <a href="./login.html">Login</a></li>
-                <li> <a href="./register.html">Register</a></li>
-                <li> <a href="./contacto.html">Contacto</a></li>
-                <li> <a href="./carrito.html">Carrito</a></li>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-content">
+      <h1 class="logo">Dulce<span>Cuna</span></h1>  
+      <nav class="nav">
+        <ul class="user-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="./login.html">Login</a></li>
+          <li><a href="./register.html">Register</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+          <li><a href="./carrito.html">Carrito</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-            </ul>
-        </nav>
-    </header>
-    <section class="banner"></section>
-        <main>
-            <section class="seccion-Productos">
-                  <article class = "product">
-                    <h2> Juego de sábanas</h2>
-                    <img src="./img/sabanas.JPG" alt="Sabanitas">
-                    <p>Medida para cuna funcional. Sabana Ajustable y funda.</p>
-                    <h3>$70000</h3>
-                    <a href="./detalle.htm" class="info">Mas Info</a>
-                    <a href="./carrito.html" class="compra">Comprar</a>
-                   </article> 
-                    <article class = "product">
-                    <h2> Acolchado para Cuna</h2>
-                    <img src="./img/Acolchado_chicho.jpg" alt="Acolchado">
-                    <p>Medida para cuna funcional. Acolchado y Chichonera</p>
-                    <h3>$150000</h3>
-                    <a href="./detalle.htm" class="info">Mas Info</a>
-                    <a href="./carrito.html" class="compra">Comprar</a>
-                   </article> 
-                   <article class = "product">
-                    <h2> Muñecos Blandos</h2>
-                    <img src="./img/Muñecos.jpg" alt="Muñecos">
-                    <p>Conejo y Raton. Blandos y abrazables</p>
-                    <h3>$50000</h3>
-                    <a href="./detalle.htm" class="info">Mas Info</a>
-                    <a href="./carrito.html" class="compra">Comprar</a>
-                   </article> 
-                    <article class = "product">
-                    <h2> Frazadita Suave</h2>
-                    <img src="./img/Frazadita.jpg" alt="Frazadita">
-                    <p>Medida para cuna funcional</p>
-                    <h3>$150000</h3>
-                    <a href="./detalle.htm" class="info">Mas Info</a>
-                    <a href="./carrito.html" class="compra">Comprar</a>
-                   </article> 
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h2>Ropa de cuna hecha con amor</h2>
+        <p>Descubrí nuestras prendas suaves, seguras y llenas de ternura para acompañar los primeros sueños de tu bebé.</p>
+        <a href="#" class="btn-primary">Ver colección</a>
+      </div>
+      <div class="hero-img">
+        <img src="./img/BANER.jpg" alt="Bebé durmiendo en su cuna">
+      </div>
+    </div>
+  </section>     
 
+  <!-- PRODUCTOS DESTACADOS -->            
+  <section class="productos">
+    <div class="container">
+      <h2 class="section-title">Productos destacados</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="./img/sabanas.JPG" alt="Sabanitas">
+          <h3>Sabanas de puro algodón</h3>
+          <p>Medida para cuna funcional. Sabana Ajustable y funda.</p>
+          <span class="price">$4.500</span>
+          <a href="./detalle.htm" class="btn-secondary">Más Info</a>
+          <a href="./carrito.html" class="btn-secondary">Comprar</a>
+        </div>       
+        <div class="card">
+          <img src="./img/Acolchado_chicho.jpg" alt="Acolchado">
+          <h3>Acolchado para cuna</h3>
+          <p>Medida para cuna funcional. Acolchado y Chichonera</p>
+          <span class="price">$6.200</span>
+          <a href="./detalle.htm"  class="btn-secondary">Más Info</a>
+          <a href="./carrito.html" class="btn-secondary">Comprar</a>
+        </div>
+        <div class="card">
+          <img src="./img/Muñecos.jpg" alt="Muñecos">
+          <h3>Muñecos Blandos</h3>
+          <p>Conejo y Ratón. Blandos y abrazables</p>
+          <span class="price">$2.800</span>
+          <a href="./detalle.htm" class="btn-secondary">Más Info</a>
+          <a href="./carrito.html" class="btn-secondary">Comprar</a>
+        </div>
+        <div class="card">
+          <img src="./img/Frazadita.jpg" alt="Frazadita">
+          <h3>Frazadita Suave</h3> 
+          <p>Medida para cuna funcional</p>
+          <span class="price">$3.800</span>
+          <a href="./detalle.htm" class="btn-secondary">Más Info</a>
+          <a href="./carrito.html" class="btn-secondary">Comprar</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-               
+  <!-- SECCIÓN DE RESEÑAS -->
+  <section class="reseñas">
+    <div class="container">
+      <h2 class="section-title">Reseñas de mamás felices 💕</h2>
+      <div class="reseñas-grid">
+        <div class="comentario">
+          <h4>Paula</h4>
+          <p>"Me encantan sus productos, desde que llegaron a casa mi bebé descansa toda la noche."</p>
+          <h5>Fecha: 20/10/2025</h5>
+        </div>
+        <div class="comentario">
+          <h4>Adriana</h4>
+          <p>"Las prendas son hermosas y de excelente calidad. Sin dudas volveré a comprar."</p>
+          <h5>Fecha: 15/10/2025</h5>
+        </div>
+        <div class="comentario">
+          <h4>Valeria</h4>
+          <p>"Llegó rapidísimo y todo divino. La manta es una ternura total 💗."</p>
+          <h5>Fecha: 10/10/2025</h5>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            </section>
-            <section class="Seccion comentarios">
-                <div class="comentarios">
-                    <h4>Usuario: Paula</h4>
-                    <p>Me encantan sus productos, 
-                    desde que llegaron a mi casa, 
-                    mi bebe descansa toda la noche</p>
-                    <h5>Fecha: 20/10/2025</h5>
-
-                </div>
-                <div class="comentarios">
-                    <h4>Usuario: Adriana</h4>
-                    <p>Me encantan sus productos, 
-                    desde que llegaron a mi casa, 
-                    mi bebe descansa toda la noche</p>
-                    <h5>Fecha: 15/10/2025</h5>
-
-                </div>
-                <div class="comentarios">
-                    <h4>Usuario: Valeria</h4>
-                    <p>Me encantan sus productos, 
-                    desde que llegaron a mi casa, 
-                    mi bebe descansa toda la noche</p>
-                    <h5>Fecha: 10/10/2025</h5>
-
-                </div>
-            </section>
-        </main>
-        <footer>
-        <p>2025 - Todos los derechos Registrados - Fabricado por el picaro Sueño</p>
-         <img src="./img/logo.jpg" alt="logo">
-
-        <nav>
-            <ul class="user-nav">
-                <li> <a href="#">Home</a></li>
-                <li> <a href="./login.html">Login</a></li>
-                <li> <a href="./register.html">Register</a></li>
-                <li> <a href="./contacto.html">Contacto</a></li>
-                <li> <a href="./carrito.html">Carrito</a></li>
-
-            </ul>
-        </nav>
-        </footer>
-   
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-info">
+        <p>2025 - Todos los derechos reservados - Fabricado por <strong>Dulce Cuna</strong></p>
+        <p>Hecho con 💗 para mamás y bebés felices.</p>
+      </div>
+      <nav>
+        <ul class="footer-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="./login.html">Login</a></li>
+          <li><a href="./register.html">Register</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+          <li><a href="./carrito.html">Carrito</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>

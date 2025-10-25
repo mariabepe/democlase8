@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body>
     <header>
         <img src="./img/logo.jpg" alt="logo">
-        <form action="./serch-results.html" method="GET" class="buscador">
-
+        <form action="./serch-results.html" method="GET" 
+        class="buscador">
+        <input type="text" placeholder="Buscar el producto deseado...." 
+        name = "Buscar"  value="">
+        <Button type="Buscar">Buscar</Button>
         </form>
         <nav>
             <ul class="user-nav">
@@ -22,11 +26,87 @@
             </ul>
         </nav>
     </header>
+    <section class="banner"></section>
         <main>
+            <section class="seccion-Productos">
+                  <article class = "product">
+                    <h2> Juego de sábanas</h2>
+                    <img src="./img/sabanas.JPG" alt="Sabanitas">
+                    <p>Medida para cuna funcional. Sabana Ajustable y funda.</p>
+                    <h3>$70000</h3>
+                    <a href="./detalle.htm" class="info">Mas Info</a>
+                    <a href="./carrito.html" class="compra">Comprar</a>
+                   </article> 
+                    <article class = "product">
+                    <h2> Acolchado para Cuna</h2>
+                    <img src="./img/Acolchado_chicho.jpg" alt="Acolchado">
+                    <p>Medida para cuna funcional. Acolchado y Chichonera</p>
+                    <h3>$150000</h3>
+                    <a href="./detalle.htm" class="info">Mas Info</a>
+                    <a href="./carrito.html" class="compra">Comprar</a>
+                   </article> 
+                   <article class = "product">
+                    <h2> Muñecos Blandos</h2>
+                    <img src="./img/Muñecos.jpg" alt="Muñecos">
+                    <p>Conejo y Raton. Blandos y abrazables</p>
+                    <h3>$50000</h3>
+                    <a href="./detalle.htm" class="info">Mas Info</a>
+                    <a href="./carrito.html" class="compra">Comprar</a>
+                   </article> 
+                    <article class = "product">
+                    <h2> Frazadita Suave</h2>
+                    <img src="./img/Frazadita.jpg" alt="Frazadita">
+                    <p>Medida para cuna funcional</p>
+                    <h3>$150000</h3>
+                    <a href="./detalle.htm" class="info">Mas Info</a>
+                    <a href="./carrito.html" class="compra">Comprar</a>
+                   </article> 
 
+
+               
+
+            </section>
+            <section class="Seccion comentarios">
+                <div class="comentarios">
+                    <h4>Usuario: Paula</h4>
+                    <p>Me encantan sus productos, 
+                    desde que llegaron a mi casa, 
+                    mi bebe descansa toda la noche</p>
+                    <h5>Fecha: 20/10/2025</h5>
+
+                </div>
+                <div class="comentarios">
+                    <h4>Usuario: Adriana</h4>
+                    <p>Me encantan sus productos, 
+                    desde que llegaron a mi casa, 
+                    mi bebe descansa toda la noche</p>
+                    <h5>Fecha: 15/10/2025</h5>
+
+                </div>
+                <div class="comentarios">
+                    <h4>Usuario: Valeria</h4>
+                    <p>Me encantan sus productos, 
+                    desde que llegaron a mi casa, 
+                    mi bebe descansa toda la noche</p>
+                    <h5>Fecha: 10/10/2025</h5>
+
+                </div>
+            </section>
         </main>
         <footer>
+        <p>2025 - Todos los derechos Registrados - Fabricado por el picaro Sueño</p>
+         <img src="./img/logo.jpg" alt="logo">
 
+        <nav>
+            <ul class="user-nav">
+                <li> <a href="#">Home</a></li>
+                <li> <a href="./login.html">Login</a></li>
+                <li> <a href="./register.html">Register</a></li>
+                <li> <a href="./contacto.html">Contacto</a></li>
+                <li> <a href="./carrito.html">Carrito</a></li>
+
+            </ul>
+        </nav>
         </footer>
    
 </body>

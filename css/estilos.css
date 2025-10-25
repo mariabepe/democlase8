@@ -139,8 +139,24 @@ body {
 }
 
 .btn-secondary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  height: 45px;
+  border-radius: 15px;
+  padding: 0 15px;
+  font-size: 1rem;
+  line-height: 1.2;
+  white-space: normal;
+  flex-shrink: 0;
+  text-align: center;
+  cursor: pointer;
   background: var(--color-primario);
   color: #fff;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
 }
 
 .btn-secondary:hover {
@@ -173,6 +189,16 @@ body {
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   padding: 20px;
   transition: transform 0.3s ease;
+  /*Esto agrego para bajar los botones*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Esto empuja el contenido y botones */
+  height: 100%; /* Asegura que todas las cards tengan igual alto */
+}
+
+.card-content {
+  /* Esto contendrá el texto y la imagen si es necesario */
+  flex-grow: 1; /* Ocupa todo el espacio disponible */
 }
 
 .card:hover {
@@ -301,4 +327,16 @@ body {
   .hero-img img {
     margin-bottom: 20px;
   }
+  
+}
+
+.card-buttons {
+  display: flex;           /* coloca los botones en línea */
+  gap: 15px;               /* margen entre ellos */
+  margin-top: 20px;        /* espacio sobre los botones */
+ }
+
+.card-buttons a {
+  text-align: center;
+  flex: 1 1 auto;          /* ancho adaptable según la card */
 }
